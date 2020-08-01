@@ -12,7 +12,7 @@ basic.forever(function () {
     }
     // Test if you touch the last coffee cup. Then you win.
     if (input.pinIsPressed(TouchPin.P2)) {
-        music.startMelody(music.builtInMelody(Melodies.JumpUp), MelodyOptions.Once)
+        music.playMelody("E D G F B A C5 B ", 120)
         basic.showIcon(IconNames.Happy)
         basic.showString("Won")
     }
